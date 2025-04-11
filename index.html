@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drawing Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Canvas created using HTML5, CSS and JavaScript" />
+</head>
+<body>
+  <h2>Canvas</h2>
+
+  <div class="controls">
+    <label for="lineWidth" class="element-label">Line width:</label>
+    <input id="lineWidth" type="range" name="lineWidth" min="10" max="90" value="1">
+
+    <label for="lineJoin" class="element-label">Line join:</label>
+    <select name="lineJoin" id="lineJoin">
+      <option value="miter">Miter</option>
+      <option value="round" selected>Round</option>
+      <option value="bevel">Bevel</option>
+    </select>
+    
+    <label for="lineCap" class="element-label">Line cap:</label>
+    <select name="lineCap" id="lineCap">
+      <option value="butt">Butt</option>
+      <option value="round" selected>Round</option>
+      <option value="square">Square</option>
+    </select>
+
+    <label for="strokeStyle" class="element-label">Stroke Color</label>
+    <input id="strokeStyle" type="color" name="strokeStyle" value="#048108">
+  </div>
+
+  <canvas id="draw" width="800" height="800"></canvas>
+
+  <script src='script.js'></script>
+
+</body>
+</html>
